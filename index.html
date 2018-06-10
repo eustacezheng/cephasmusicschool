@@ -56,11 +56,12 @@
 				header: {
 					left: 'prev,next today',
 					center: 'title',
-					right: 'listWeek, month'
+					right: 'listMonth, listYear, month'
 				},
 				views: {
-					month: {buttonText: 'Calendar View'},
-					listWeek: {buttonText: 'List by Week'}
+					month: {buttonText: 'Calendar'},
+					listMonth: {buttonText: 'List by Month'},
+					listYear: {buttonText: 'List by Year'}
 				},
 				googleCalendarApiKey: 'AIzaSyAJdavUX9TwyKeUSAMbQ4ZMKCfbcObuP8c',
 				events: {
@@ -87,12 +88,9 @@
 
 				<div class="navbar-header">
 					<!-- Logo -->
-					<div class="navbar-brand">
-						<a href="index.html">
-							<img class="logo" src="img/cephas_logo.png" alt="logo">
-							<img class="logo-alt" src="img/cephas_logo.png" alt="logo">
-						</a>
-					</div>
+					<!-- <div class="navbar-brand">
+						
+					</div> -->
 					<!-- /Logo -->
 
 					<!-- Collapse nav button -->
@@ -109,7 +107,6 @@
 					<li><a href="#portfolio">Courses</a></li>
 					<li><a href="#service">Instructors</a></li>
 					<li><a href="#pricing">Events & Announcements</a></li>
-					<li><a href="#team">Team</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -125,6 +122,7 @@
 					<!-- home content -->
 					<div class="col-md-10 col-md-offset-1">
 						<div class="home-content">
+							<img class="logo" src="img/cephas_logo.png" height="450" width="450" alt="logo">
 							<h1 class="white-text">Pursue your Passion</h1>
 							<p class="white-text">Kickstart your musical learning journey with us today!
 							</p>
@@ -267,8 +265,8 @@
 					<img class="img-responsive courseSection" src="./img/guitar.jpg" alt="">
 					<div class="overlay"></div>
 					<div class="work-content">
-						<span>6th Instrument</span>
-						<h3>Time to make sure we learn!</h3>
+						<span>Guitar</span>
+						<h3>Strum to your heart's content!</h3>
 						<div class="work-link">
 							<a href="#"><i class="fa fa-external-link"></i></a>
 							<a class="lightbox" href="./img/guitar.jpg"><i class="fa fa-search"></i></a>
@@ -302,34 +300,68 @@
 				<!-- /Section header -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="service">
-						<i><img style="width: 45px; height: 45px;" src="img/avatar.png" /></i>
-						<h3>Instructor Number 1</h3>
-						<p>Write up for Instructor Number 1</p>
+						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Andjelita-Zeng.png" />
+						<h3>Dr. Andjelita Zeng</h3>
+						<p>
+							Dr. Andjelita Zeng is a highly accomplished pianist and musician with a long list of credentials. Having attained her Doctorate from the Royal Conservatory of Brussels, she has taught in many institutes internationally including:
+						</p>
+							<ol>
+								<li>1. International Music School of Genval (Belgium)</li>
+								<li>2. Institute of Music Nusantara (Jakarta) (Principal)</li>
+								<li>3. Gloriamus Music School (Jakarta) (Principal)</li>
+								<li>4. Methodist School of Music (Singapore) (Head of Teaching)</li>
+							</ol>
+							<br/>
+						<p>
+							Be it furthering their studies or to seek a deeper appreciation in music, Dr. Zeng’s deep-rooted passion drives her to help aspiring musicians achieve their goals. She finds satisfaction and shares the sense of achievement when her students’ hard work payoff be it attaining a distinction in the ABRSM exam, attaining their Fellowship Degree, or even performing in front of an audience for the very first time. 
+						</p>
+						<br/>
+						<p>
+								In her free time she maintains a healthy body and mind by hitting the gym, to declutter and to help her stay ready in leading Cephas. 
+						</p>
 					</div>
 				</div>
 				<!-- /service -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="service">
-						<i><img style="width: 45px; height: 45px;" src="img/avatar.png" /></i>
-						<h3>Instructor Number 2</h3>
-						<p>Write up for Instructor Number 2</p>
+						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Ethel-Loh.png" />
+						<h3>Ms. Ethel Loh</h3>
+						<p>
+							Ms Ethel Loh has been teaching for the past 40 years. Possessing a degree in Early Childhood Education coupled with many years of experience, she is adept in engaging children! She enjoys blessing her little pianists with the right skills and mindset to overcome their obstacles as she showers them with love. She strives to help children enjoy and appreciate music through moving, listening, singing, playing and also creating (their own music)!  Having fun while learning is important; for that, she believes would go a long way in developing a love for music, especially for the very young!
+						</p>
+						<br/>
+						<p>When not teaching, she devotes her time to the Lord in prayer and worship meetings. </p>
 					</div>
 				</div>
 				<!-- /service -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-3 col-sm-6">
 					<div class="service">
-						<i><img style="width: 45px; height: 45px;" src="img/avatar.png" /></i>
-						<h3>Instructor Number 3</h3>
-						<p>Write up for Instructor Number 3</p>
+						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Ng-Choy-See.png" />
+						<h3>Mrs. Ng Choy See</h3>
+						<p>With more than 20 years of experience in teaching the piano, she has groomed many students into fine musicians. She passionately encourages her students to give their best and they leave her classroom happy and motivated to practice more!</p>
+						<br/>
+						<p>Mrs. Ng had 12 years of experience in teaching piano and achieved Grade 8 in piano (practical and theory). She feels fulfilled when she teaches someone who is motivated and is committed to learn and put in hard work. She feels satisfied when she is able to impart knowledge or a skill to another person.</p>
 					</div>
 				</div>
 				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-3 col-sm-6">
+						<div class="service">
+							<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Roslan.png" />
+							<h3>Mr. Roslan</h3>
+							<p>With deep passion for the guitar, Mr Roslan always gives 101% when sharing his knowledge! With his warm personality, both adults and children are quick to open up to him. He loves it especially when his students are able to pluck and strum to their hearts’ content. </p>
+							<br/>
+							<p>When not sharing his knowledge to his students, he shares his passion with his audience by playing in a live band on the weekends! He has also performed in formal functions for more than 10 years! Check him out here! </p>
+						</div>
+					</div>
+					<!-- /service -->
 
 			</div>
 			<!-- /Row -->
@@ -355,22 +387,22 @@
 					<div class="section-header">
 						<h2 class="title">Why Choose Cephas?</h2>
 					</div>
-					<p>A writeup about Cephas Music School that differentiates you from your competitiors, especially for being great in the west.</p>
+					<p>Ready to kickstary your musical learning journey? There is no better choice than with Cephas Music School with our affordable rates & great instructors dedicated to your growth! Let us tell you why we are worth your time!</p>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Advantage #1</p>
+						<p>Imported Methodologies and Curriculum from Belgium by Dr. Chendra</p>
 					</div>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Advantage #2</p>
+						<p>Internal Exams and Annual Concerts to Participate in</p>
 					</div>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Advantage #3</p>
+						<p>Highly Experienced and Qualified Instructors</p>
 					</div>
 					<div class="feature">
 						<i class="fa fa-check"></i>
-						<p>Advantage #4</p>
+						<p>Dedication and Responsibility to our Students' Growth</p>
 					</div>
 				</div>
 				<!-- /why choose us content -->
@@ -415,8 +447,8 @@
 				<div class="col-sm-3 col-xs-6">
 					<div class="number">
 						<i class="fa fa-users"></i>
-						<h3 class="white-text"><span class="counter">1000</span></h3>
-						<span class="white-text">Happy Students</span>
+						<h3 class="white-text"><span class="counter">100%</span></h3>
+						<span class="white-text">Happy and Satisfied Parents & Students</span>
 					</div>
 				</div>
 				<!-- /number -->
@@ -425,8 +457,8 @@
 				<div class="col-sm-3 col-xs-6">
 					<div class="number">
 						<i class="fa fa-trophy"></i>
-						<h3 class="white-text"><span class="counter">5</span></h3>
-						<span class="white-text">Competition Awards Won</span>
+						<h3 class="white-text"><span class="counter">100%</span></h3>
+						<span class="white-text">Passing Rates in ABRSM</span>
 					</div>
 				</div>
 				<!-- /number -->
@@ -434,9 +466,9 @@
 				<!-- number -->
 				<div class="col-sm-3 col-xs-6">
 					<div class="number">
-						<i class="fa fa-coffee"></i>
-						<h3 class="white-text"><span class="counter">25</span></h3>
-						<span class="white-text">Concerts Held</span>
+						<i class="fa fa-trophy"></i>
+						<h3 class="white-text"><span class="counter">70%</span></h3>
+						<span class="white-text">At least 70% attained Merit</span>
 					</div>
 				</div>
 				<!-- /number -->
@@ -445,8 +477,8 @@
 				<div class="col-sm-3 col-xs-6">
 					<div class="number">
 						<i class="fa fa-file"></i>
-						<h3 class="white-text"><span class="counter">39</span></h3>
-						<span class="white-text">Grade 8 Students</span>
+						<h3 class="white-text"><span class="counter">>30</span></h3>
+						<span class="white-text">More than 30 Diploma & Degree Graduates</span>
 					</div>
 				</div>
 				<!-- /number -->
@@ -585,7 +617,7 @@
 					<div class="contact">
 						<i class="fa fa-phone"></i>
 						<h3>Phone</h3>
-						<p>+65 6776 0489</p>
+						<p><a href="tel:+6567760489">+65 6776 0489</a></p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -595,7 +627,7 @@
 					<div class="contact">
 						<i class="fa fa-envelope"></i>
 						<h3>Email</h3>
-						<p>cephasms@gmail.com</p>
+						<p><a href="mailto:cephasms@gmail.com">cephasms@gmail.com</a></p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -605,7 +637,7 @@
 					<div class="contact">
 						<i class="fa fa-map-marker"></i>
 						<h3>Address</h3>
-						<p>Blk 446 Clementi Ave 3, #01-187 (Level 2)</p>
+						<p><a href="https://goo.gl/maps/XtMyGkdpxsn">Blk 446 Clementi Ave 3, #01-187 (Level 2)</a></p>
 					</div>
 				</div>
 				<!-- /contact -->
@@ -651,7 +683,7 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="https://www.facebook.com/cephas.mschool"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.facebook.com/CephasMusicSchool/"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 					</ul>
@@ -659,7 +691,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright Cephas Music School © 2018. All Rights Reserved.</p>
+						<p>Copyright 2018 Cephas Music School. All Rights Reserved.</p>
 					</div>
 					<!-- /footer copyright -->
 
