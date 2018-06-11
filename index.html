@@ -68,12 +68,178 @@
 					googleCalendarId: 'dut15nh20o1gk1jthvtjbkueck@group.calendar.google.com'
 				}
 			})
+
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+
+			var cephasModal = document.getElementById('meaningOfCephasModal');
+
+			// Get the button that opens the modal
+			var cephasBtn = document.getElementById("cephasMeaningBtn");
+
+			// Get the <span> element that closes the modal
+			var cephasSpan = document.getElementById("cephasClose");
+
+			// When the user clicks the button, open the modal 
+			cephasBtn.onclick = function() {
+				cephasModal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			cephasSpan.onclick = function() {
+				cephasModal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					cephasModal.style.display = "none";
+				}
+			}
+
+			var logoModal = document.getElementById('logoModal');
+
+			// Get the button that opens the modal
+			var logoBtn = document.getElementById("logoMeaningBtn");
+
+			// Get the <span> element that closes the modal
+			var logoSpan = document.getElementById("logoClose");
+
+			// When the user clicks the button, open the modal 
+			logoBtn.onclick = function() {
+				logoModal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			logoSpan.onclick = function() {
+				logoModal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					logoModal.style.display = "none";
+				}
+			}
 		});
 	</script>
 
 </head>
 
 <body>
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+			<span class="close">&times;</span>
+			<h2 class="modalH2">About Us</h2>
+			</div>
+			<div class="modal-body">
+			<p>Welcome to Cephas Music School!</p>
+			<br/>
+			<p>
+				With a burning desire to contribute to the landscape of music education in Singapore and to improve it where possible, Dr Andjelita Chendra took the leap of faith and founded Cephas Music School in 2010. 
+				<br/><br/>
+				By adapting unique methodologies from Belgium and with focus on developing the core foundations, every student can expect to excel in both the early and intermediate stages of their education! We are driven to provide our students with the highest quality education, hence our teachers possess minimally a diploma and they are also reviewed by Dr Chendra.   
+				<br/><br/>
+				Our in-house exams are judged by external judges to ensure non-bias and to even better prepare students for the external exams. We encourage students to participate in our biannual concerts to showcase their talents and hard work, and to build their confidence. One dedicated for the higher grade and diploma students to further develop their passion; and the other with our prize-giving ceremony in which we give recognition to our students’ achievements and efforts! 
+				<br/><br/>
+				So what are you waiting for? Let us embark on your musical journey together!
+			</p>
+			</div>
+			<div class="modal-footer">
+			<h4 class="modalH4">Cephas Music School</h4>
+			</div>
+		</div>
+	</div>
+
+	<div id="meaningOfCephasModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+			<span id="cephasClose" class="close">&times;</span>
+			<h2 class="modalH2">Meaning of Cephas</h2>
+			</div>
+			<div class="modal-body">
+			<p>
+				The name Cephas is the Aramaic name of St. Peter, which means rock or stone. It was given to him by Jesus, as in John 1:42
+				<br/><br/>
+				And he brought him to Jesus. Jesus looked at him and said, “You are Simon son of John. You will be called Cephas” (which, when translated, is Peter) 
+				<br/><br/>
+				In Matthew 16:13 – 18 
+				<br/>
+				When Jesus came to the region of Caesarea Philippi, he asked his disciples, “Who do people say the Son of Man is?”
+				They replied, “Some say John the Baptist; others say Elijah; and still others Jeremiah or one of the prophets.”
+				“But what about you?” he asked. “Who do you say I am?”
+				Simon Peter answered, “You are the Messiah, the Son of the living God.”
+				Jesus replied, “Blessed are you, Simon son of Jonah, for this was not revealed to you by flesh and blood, but by my Father in heaven. And I tell you that you are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it.” 
+				<br/><br/>
+				Cephas was a man who has been truly touched by the grace of God, as he was forgiven time and again for his many flaws. It is through His grace, impulsive Cephas was changed to be a graceful and a strong and immovable advocate of Christ and the glory of God, as the power of Christ is made perfect in his weakness; Jesus who foresaw this chose him to lead the church. 
+				<br/><br/>
+				We have chosen the name Cephas in his stead. To have Christ as our pillar of strength and to have a strong and immovable foundation. Likewise with Cephas who is not perfect, through the glory of God we strive for excellence.
+				<br/><br/>
+				With the same principles, our curriculum focuses on the foundations so that students may be able to go higher and further than ever before.
+			</p>
+			</div>
+			<div class="modal-footer">
+			<h4 class="modalH4">Cephas Music School</h4>
+			</div>
+		</div>
+	</div>
+
+	<div id="logoModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+			<span id="logoClose" class="close">&times;</span>
+			<h2 class="modalH2">Meaning of our Logo</h2>
+			</div>
+			<div class="modal-body">
+				<p style="text-align: center;">
+					<img class="logo" src="img/cephas_logo.png" height="300" width="300" alt="logo">
+				</p>
+				<p style="text-align: center;">
+					The red represents a few things:<br/>
+					1.	Passion for music and continuous learning<br/>
+					2.	Love for our staff and students<br/>
+					3.	Energy in the sense that we are dynamic and proactive to industry changes<br/>
+					4.	Determination to strive for excellence
+				</p> <br/>
+				<p>
+					The G clef in the centre represents the area of our expertise: Music<br/>
+					Within the G clef is a subtle cross, which represents that Christ is our center and our pillar of strength, and at the base of the G clef, is the solid rock which the church is built upon; which is synonymous to the name Cephas. 
+				</p>
+			</div>
+			<div class="modal-footer">
+			<h4 class="modalH4">Cephas Music School</h4>
+			</div>
+		</div>
+		</div>
+
+
+
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
@@ -88,9 +254,9 @@
 
 				<div class="navbar-header">
 					<!-- Logo -->
-					<!-- <div class="navbar-brand">
-						
-					</div> -->
+					<div class="navbar-brand">
+						<img class="logo" src="img/cephas_logo.png" height="120" width="60" alt="logo">
+					</div>
 					<!-- /Logo -->
 
 					<!-- Collapse nav button -->
@@ -103,8 +269,9 @@
 				<!--  Main navigation  -->
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
-					<li><a href="#about">Calendar</a></li>
-					<li><a href="#portfolio">Courses</a></li>
+					<li><a href="#aboutus">About Us</a></li>
+					<li><a href="#eventcalendar">Calendar</a></li>
+					<li><a href="#courses">Courses</a></li>
 					<li><a href="#service">Instructors</a></li>
 					<li><a href="#pricing">Events & Announcements</a></li>
 					<li><a href="#contact">Contact</a></li>
@@ -127,7 +294,7 @@
 							<p class="white-text">Kickstart your musical learning journey with us today!
 							</p>
 							<button class="white-btn">Sign Up!</button>
-							<button class="main-btn">Learn more</button>
+							<button id="myBtn" class="main-btn">Learn more</button>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -140,8 +307,79 @@
 	</header>
 	<!-- /Header -->
 
-	<!-- About -->
-	<div id="about" class="section md-padding">
+	<!-- About Us-->
+
+	<div id="aboutus" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">About Us</h2>
+				</div>
+				<!-- /Section header -->
+
+				<div class="col-md-3">
+					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>Vision</h3>
+						<p>To be a <b>cornerstone</b> of musical foundation and a beacon of light, reaching out and shining a guiding light to all in music education and beyond.</p>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-3">
+					<div class="about">
+						<i class="fa fa-magic"></i>
+						<h3>Mission</h3>
+						<p>
+							To develop a strong and rock-solid foundation in every student, so that they may soar to greater heights and realise their potential in their life-long musical journey.
+							<br/><br/>
+							To actively develop students’ passion through engagement and positive reinforcement.
+							<br/><br/>
+							To develop every student holistically beyond education.
+						</p>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-3">
+					<div class="about">
+						<i class="fa fa-mobile"></i>
+						<h3>Our Motto: Lux et Veritas</h3>
+						<p>Lux et Veritas is Latin for Light and Truth. Our motto is synonymous with our vision. </p>
+					</div>
+				</div>
+				<!-- /about -->
+
+					<!-- about -->
+				<div class="col-md-3">
+					<div class="about">
+						<i class="fa fa-mobile"></i>
+						<h3>Meaning of Cephas & Logo</h3>
+						<button id="cephasMeaningBtn" class="main-btn">Meaning of Cephas</button>
+						<button id="logoMeaningBtn" class="main-btn">What our Logo Represent</button>
+					</div>
+				</div>
+				<!-- /about -->
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+
+	<!-- /About Us-->
+
+	<!-- Calendar -->
+	<div id="eventcalendar" class="section md-padding">
 
 		<!-- Container -->
 		<div class="container">
@@ -170,8 +408,8 @@
 	<!-- /About -->
 
 
-	<!-- Portfolio -->
-	<div id="portfolio" class="section md-padding bg-grey">
+	<!-- Courses -->
+	<div id="courses" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
@@ -185,7 +423,7 @@
 				</div>
 				<!-- /Section header -->
 
-				<!-- Work -->
+				<!-- Course -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/violin.jpg" alt="">
 					<div class="overlay"></div>
@@ -198,9 +436,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
+				<!-- /Course -->
 
-				<!-- Work -->
+				<!-- Course -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/piano.jpg" alt="">
 					<div class="overlay"></div>
@@ -213,9 +451,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
+				<!-- /Course -->
 
-				<!-- Work -->
+				<!-- Course -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/drums.jpg" alt="">
 					<div class="overlay"></div>
@@ -228,9 +466,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
+				<!-- /Course -->
 
-				<!-- Work -->
+				<!-- Course -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/saxophone.jpg" alt="">
 					<div class="overlay"></div>
@@ -243,9 +481,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
+				<!-- /Course -->
 
-				<!-- Work -->
+				<!-- Course -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/flute.jpg" alt="">
 					<div class="overlay"></div>
@@ -258,9 +496,9 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
+				<!-- /Course -->
 
-				<!-- Work -->
+				<!-- Course -->
 				<div class="col-md-4 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/guitar.jpg" alt="">
 					<div class="overlay"></div>
@@ -273,7 +511,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /Work -->
+				<!-- /Course -->
 
 			</div>
 			<!-- /Row -->
@@ -282,7 +520,7 @@
 		<!-- /Container -->
 
 	</div>
-	<!-- /Portfolio -->
+	<!-- /Courses -->
 
 	<!-- Service -->
 	<div id="service" class="section md-padding">
