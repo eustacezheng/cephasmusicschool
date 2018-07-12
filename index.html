@@ -143,6 +143,69 @@
 					logoModal.style.display = "none";
 				}
 			}
+
+			$('#fullMissionText').fadeToggle();
+			$('hideMissionBtn').fadeToggle();
+
+			$('#showMissionBtn').click(function() {
+				$('#halfMissionText').fadeToggle(500);
+				$('#showMissionBtn').fadeToggle(500);
+				
+				$('#fullMissionText').fadeToggle(2500);
+				$('hideMissionBtn').fadeToggle(2500);
+			});
+
+			$('#hideMissionBtn').click(function() {
+				$('#halfMissionText').fadeToggle(1000);
+				$('#showMissionBtn').fadeToggle(1000);
+				$('#fullMissionText').fadeToggle(100);
+				$('hideMissionBtn').fadeToggle(100);
+			})
+
+			$('#firstInstructorFull').fadeToggle();
+			$('#showFirstInstructorBtn').click(function() {
+				$('#firstInstructorFull').fadeToggle();
+				$('#firstInstructorHalf').fadeToggle();
+			})
+
+			$('#hideFirstInstructorBtn').click(function() {
+				$('#firstInstructorFull').fadeToggle();
+				$('#firstInstructorHalf').fadeToggle();
+			})
+
+			$('#secondInstructorFull').fadeToggle();
+			$('#showSecondInstructorBtn').click(function() {
+				$('#secondInstructorFull').fadeToggle();
+				$('#secondInstructorHalf').fadeToggle();
+			})
+
+			$('#hideSecondInstructorBtn').click(function() {
+				$('#secondInstructorFull').fadeToggle();
+				$('#secondInstructorHalf').fadeToggle();
+			})
+
+			$('#thirdInstructorFull').fadeToggle();
+			$('#showThirdInstructorBtn').click(function() {
+				$('#thirdInstructorFull').fadeToggle();
+				$('#thirdInstructorHalf').fadeToggle();
+			})
+
+			$('#hideThirdInstructorBtn').click(function() {
+				$('#thirdInstructorFull').fadeToggle();
+				$('#thirdInstructorHalf').fadeToggle();
+			})
+
+			$('#fourthInstructorFull').fadeToggle();
+			$('#showFourthInstructorBtn').click(function() {
+				$('#fourthInstructorFull').fadeToggle();
+				$('#fourthInstructorHalf').fadeToggle();
+			})
+
+			$('#hideFourthInstructorBtn').click(function() {
+				$('#fourthInstructorFull').fadeToggle();
+				$('#fourthInstructorHalf').fadeToggle();
+			})
+
 		});
 	</script>
 
@@ -273,7 +336,7 @@
 					<li><a href="#eventcalendar">Calendar</a></li>
 					<li><a href="#courses">Courses</a></li>
 					<li><a href="#service">Instructors</a></li>
-					<li><a href="#pricing">Events & Announcements</a></li>
+					<li><a href="#eventcalendar">Events & Announcements</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -337,12 +400,19 @@
 					<div class="about">
 						<i class="fa fa-magic"></i>
 						<h3>Mission</h3>
-						<p>
+						<p id="halfMissionText">
+							To develop a strong and rock-solid foundation in every student, so that they may soar to greater heights and realise their potential in their life-long musical...
+							<br/>
+							<button id="showMissionBtn" class="main-btn">See More</button>
+						</p>
+						<p id="fullMissionText">
 							To develop a strong and rock-solid foundation in every student, so that they may soar to greater heights and realise their potential in their life-long musical journey.
 							<br/><br/>
 							To actively develop students’ passion through engagement and positive reinforcement.
 							<br/><br/>
 							To develop every student holistically beyond education.
+							<br/>
+							<button id="hideMissionBtn" class="main-btn">Hide</button>
 						</p>
 					</div>
 				</div>
@@ -352,8 +422,8 @@
 				<div class="col-md-3">
 					<div class="about">
 						<i class="fa fa-mobile"></i>
-						<h3>Our Motto: Lux et Veritas</h3>
-						<p>Lux et Veritas is Latin for Light and Truth. Our motto is synonymous with our vision. </p>
+						<h3>Lux et Veritas</h3>
+						<p>Our Motto - Lux et Veritas is Latin for Light and Truth. Our motto is synonymous with our vision. </p>
 					</div>
 				</div>
 				<!-- /about -->
@@ -362,7 +432,7 @@
 				<div class="col-md-3">
 					<div class="about">
 						<i class="fa fa-mobile"></i>
-						<h3>Meaning of Cephas & Logo</h3>
+						<h3>Cephas & Logo</h3>
 						<button id="cephasMeaningBtn" class="main-btn">Meaning of Cephas</button>
 						<button id="logoMeaningBtn" class="main-btn">What our Logo Represent</button>
 					</div>
@@ -389,7 +459,7 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Cephas Calendar</h2>
+					<h2 class="title">Calendar & Events</h2>
 				</div>
 				<!-- /Section header -->
 
@@ -424,7 +494,7 @@
 				<!-- /Section header -->
 
 				<!-- Course -->
-				<div class="col-md-4 col-xs-6 work">
+				<div class="col-md-6 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/violin.jpg" alt="">
 					<div class="overlay"></div>
 					<div class="work-content">
@@ -439,7 +509,7 @@
 				<!-- /Course -->
 
 				<!-- Course -->
-				<div class="col-md-4 col-xs-6 work">
+				<div class="col-md-6 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/piano.jpg" alt="">
 					<div class="overlay"></div>
 					<div class="work-content">
@@ -453,38 +523,9 @@
 				</div>
 				<!-- /Course -->
 
+				
 				<!-- Course -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive courseSection" src="./img/drums.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Drums</span>
-						<h3>Drumming to your heartbeat's content</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/drums.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Course -->
-
-				<!-- Course -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive courseSection" src="./img/saxophone.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Saxophone</span>
-						<h3>Saxy, what more can we say?</h3>
-						<div class="work-link">
-							<a href="#"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/saxophone.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Course -->
-
-				<!-- Course -->
-				<div class="col-md-4 col-xs-6 work">
+				<div class="col-md-6 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/flute.jpg" alt="">
 					<div class="overlay"></div>
 					<div class="work-content">
@@ -499,7 +540,7 @@
 				<!-- /Course -->
 
 				<!-- Course -->
-				<div class="col-md-4 col-xs-6 work">
+				<div class="col-md-6 col-xs-6 work">
 					<img class="img-responsive courseSection" src="./img/guitar.jpg" alt="">
 					<div class="overlay"></div>
 					<div class="work-content">
@@ -541,24 +582,35 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="service">
 						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Andjelita-Zeng.png" />
-						<h3>Dr. Andjelita Zeng</h3>
-						<p>
-							Dr. Andjelita Zeng is a highly accomplished pianist and musician with a long list of credentials. Having attained her Doctorate from the Royal Conservatory of Brussels, she has taught in many institutes internationally including:
-						</p>
-							<ol>
-								<li>1. International Music School of Genval (Belgium)</li>
-								<li>2. Institute of Music Nusantara (Jakarta) (Principal)</li>
-								<li>3. Gloriamus Music School (Jakarta) (Principal)</li>
-								<li>4. Methodist School of Music (Singapore) (Head of Teaching)</li>
-							</ol>
+						<h5>Dr. Andjelita Zeng</h5>
+						<div id="firstInstructorHalf">
+							<p>
+								Dr. Andjelita Zeng is a highly accomplished pianist and musician with a long list of credentials. Having attained her Doctorate from the Royal Conservatory of Brussels, she has taught in many institutes internationally including:
+							</p>
+							<button id="showFirstInstructorBtn" class="main-btn">Read More</button>
+						</div>
+						<div id="firstInstructorFull">
+							<p>
+								Dr. Andjelita Zeng is a highly accomplished pianist and musician with a long list of credentials. Having attained her Doctorate from the Royal Conservatory of Brussels, she has taught in many institutes internationally including:
+							</p>
 							<br/>
-						<p>
-							Be it furthering their studies or to seek a deeper appreciation in music, Dr. Zeng’s deep-rooted passion drives her to help aspiring musicians achieve their goals. She finds satisfaction and shares the sense of achievement when her students’ hard work payoff be it attaining a distinction in the ABRSM exam, attaining their Fellowship Degree, or even performing in front of an audience for the very first time. 
-						</p>
-						<br/>
-						<p>
-								In her free time she maintains a healthy body and mind by hitting the gym, to declutter and to help her stay ready in leading Cephas. 
-						</p>
+								<ol>
+									<li>1. International Music School of Genval (Belgium)</li>
+									<li>2. Institute of Music Nusantara (Jakarta) (Principal)</li>
+									<li>3. Gloriamus Music School (Jakarta) (Principal)</li>
+									<li>4. Methodist School of Music (Singapore) (Head of Teaching)</li>
+								</ol>
+								<br/>
+							<p>
+								Be it furthering their studies or to seek a deeper appreciation in music, Dr. Zeng’s deep-rooted passion drives her to help aspiring musicians achieve their goals. She finds satisfaction and shares the sense of achievement when her students’ hard work payoff be it attaining a distinction in the ABRSM exam, attaining their Fellowship Degree, or even performing in front of an audience for the very first time. 
+							</p>
+							<br/>
+							<p>
+									In her free time she maintains a healthy body and mind by hitting the gym, to declutter and to help her stay ready in leading Cephas. 
+							</p>
+							<button id="hideFirstInstructorBtn" class="main-btn">Hide</button>
+						</div>
+						
 					</div>
 				</div>
 				<!-- /service -->
@@ -567,12 +619,23 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="service">
 						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Ethel-Loh.png" />
-						<h3>Ms. Ethel Loh</h3>
-						<p>
-							Ms Ethel Loh has been teaching for the past 40 years. Possessing a degree in Early Childhood Education coupled with many years of experience, she is adept in engaging children! She enjoys blessing her little pianists with the right skills and mindset to overcome their obstacles as she showers them with love. She strives to help children enjoy and appreciate music through moving, listening, singing, playing and also creating (their own music)!  Having fun while learning is important; for that, she believes would go a long way in developing a love for music, especially for the very young!
-						</p>
-						<br/>
-						<p>When not teaching, she devotes her time to the Lord in prayer and worship meetings. </p>
+						<h5>Ms. Ethel Loh</h5>
+						<div id="secondInstructorFull">
+							<p>
+								Ms Ethel Loh has been teaching for the past 40 years. Possessing a degree in Early Childhood Education coupled with many years of experience, she is adept in engaging children! She enjoys blessing her little pianists with the right skills and mindset to overcome their 
+								<br/><br/>
+								obstacles as she showers them with love. She strives to help children enjoy and appreciate music through moving, listening, singing, playing and also creating (their own music)!  Having fun while learning is important; for that, she believes would go a long way in developing a love for music, especially for the very young! 
+							</p>
+							<br/>
+							<p>When not teaching, she devotes her time to the Lord in prayer and worship meetings. </p>
+							<button id="hideSecondInstructorBtn" class="main-btn">Hide</button>
+						</div>
+						<div id="secondInstructorHalf">
+							<p>
+								Ms Ethel Loh has been teaching for the past 40 years. Possessing a degree in Early Childhood Education coupled with many years of experience, she is adept in engaging children! She enjoys blessing her little pianists with the right skills and mindset...
+							</p>
+							<button id="showSecondInstructorBtn" class="main-btn">Read More</button>
+						</div>
 					</div>
 				</div>
 				<!-- /service -->
@@ -581,24 +644,42 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="service">
 						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Ng-Choy-See.png" />
-						<h3>Mrs. Ng Choy See</h3>
-						<p>With more than 20 years of experience in teaching the piano, she has groomed many students into fine musicians. She passionately encourages her students to give their best and they leave her classroom happy and motivated to practice more!</p>
-						<br/>
-						<p>Mrs. Ng had 12 years of experience in teaching piano and achieved Grade 8 in piano (practical and theory). She feels fulfilled when she teaches someone who is motivated and is committed to learn and put in hard work. She feels satisfied when she is able to impart knowledge or a skill to another person.</p>
+						<h5>Mrs. Ng Choy See</h5>
+						<div id="thirdInstructorHalf">
+							<p>
+								With more than 20 years of experience in teaching the piano, she has groomed many students into fine musicians. She passionately encourages her students to give their best and they leave her classroom happy and motivated to practice more!	
+							</p>
+							<button id="showThirdInstructorBtn" class="main-btn">Read More</button>
+						</div>
+						<div id="thirdInstructorFull">
+							<p>
+								With more than 20 years of experience in teaching the piano, she has groomed many students into fine musicians. She passionately encourages her students to give their best and they leave her classroom happy and motivated to practice more!
+								<br/>
+								<p>Mrs. Ng had 12 years of experience in teaching piano and achieved Grade 8 in piano (practical and theory). She feels fulfilled when she teaches someone who is motivated and is committed to learn and put in hard work. She feels satisfied when she is able to impart knowledge or a skill to another person.</p>
+							</p>
+							<button id="hideThirdInstructorBtn" class="main-btn">Hide</button>
+						</div>
 					</div>
 				</div>
 				<!-- /service -->
 
 				<!-- service -->
 				<div class="col-md-3 col-sm-6">
-						<div class="service">
-							<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Roslan.png" />
-							<h3>Mr. Roslan</h3>
+					<div class="service">
+						<img style="width: 150px; height: 200px; margin-bottom: 20px;" src="img/Roslan.png" />
+						<h5>Mr. Roslan</h5>
+						<div id="fourthInstructorFull">
 							<p>With deep passion for the guitar, Mr Roslan always gives 101% when sharing his knowledge! With his warm personality, both adults and children are quick to open up to him. He loves it especially when his students are able to pluck and strum to their hearts’ content. </p>
 							<br/>
 							<p>When not sharing his knowledge to his students, he shares his passion with his audience by playing in a live band on the weekends! He has also performed in formal functions for more than 10 years! Check him out here! </p>
+							<button id="showFourthInstructorBtn" class="main-btn">Hide</button>
+						</div>
+						<div id="fourthInstructorHalf">
+							<p>With deep passion for the guitar, Mr Roslan always gives 101% when sharing his knowledge! With his warm personality, both adults and children are quick to open up to him. He loves it especially when his students are able to pluck and strum to their hearts’</p>
+							<button id="hideFourthInstructorBtn" class="main-btn">Read More</button>
 						</div>
 					</div>
+				</div>
 					<!-- /service -->
 
 			</div>
@@ -621,7 +702,7 @@
 			<div class="row">
 
 				<!-- why choose us content -->
-				<div class="col-md-6">
+				<div class="col-md-8">
 					<div class="section-header">
 						<h2 class="title">Why Choose Cephas?</h2>
 					</div>
@@ -670,7 +751,7 @@
 	<div id="numbers" class="section sm-padding">
 
 		<!-- Background Image -->
-		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
+		<div class="bg-img" style="background-image: url('./img/background4.jpg');">
 			<div class="overlay"></div>
 		</div>
 		<!-- /Background Image -->
@@ -730,111 +811,7 @@
 	</div>
 	<!-- /Numbers -->
 
-	<!-- Pricing -->
-	<div id="pricing" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Events & Announcements</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Event 1</span>
-							<div class="price">
-								<h3>Event Image<span class="duration"> Here</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>Date: 30th January 2018</p>
-							</li>
-							<li>
-								<p>Time: 1900 - 2200 Hours</p>
-							</li>
-							<li>
-								<p>Location: The Esplanade</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">More Details</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Event 2</span>
-							<div class="price">
-								<h3>Event Image<span class="duration">/ Here</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>Date: 1st Feburary 2018</p>
-							</li>
-							<li>
-								<p>Time: 1000 - 1200 Hours</p>
-							</li>
-							<li>
-								<p>Location: Cephas Music School</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">More Details</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Event 3</span>
-							<div class="price">
-								<h3>Event Image<span class="duration">/ Here</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>Date: 9th March 2018</p>
-							</li>
-							<li>
-								<p>Time: 1900 - 2100 Hours</p>
-							</li>
-							<li>
-								<p>Location: Clementi Community Centre</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">More Details</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-			</div>
-			<!-- Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Pricing -->
-
+	
 	<!-- Contact -->
 	<div id="contact" class="section md-padding">
 
